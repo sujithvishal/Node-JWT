@@ -1,0 +1,20 @@
+<%-include('./partials/header') %>
+
+<div class="container d-flex flex-column p-5">
+    <h2>LOGIN-FORM</h2>
+    <form action='/login' method="POST">
+    <div>
+      <label for="email">Email</label>
+      <input class="form-control" type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input class="form-control" type="password" id="password" name="password" required>
+    </div><br>
+    <input type="submit" class="form-control bg-success" value="Login">  
+</form><br>
+    <h2>Don't have an account -></h2>
+    <a href="/register" class="btn btn-primary">Register</a>
+</div>
+</body>
+</html>
